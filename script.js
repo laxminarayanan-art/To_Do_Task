@@ -1,7 +1,7 @@
-const taskInput = document.querySelector(".task-input input"),
+const taskInput = document.querySelector(".taskinput input"),
 filters = document.querySelectorAll(".filters span"),
 clearAll = document.querySelector(".clear-btn"),
-taskBox = document.querySelector(".task-box");
+taskBox = document.querySelector(".box");
 
 let editId,
 isEditTask = false,
