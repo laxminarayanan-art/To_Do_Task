@@ -30,17 +30,17 @@ body{
   border-radius: 7px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
-.task-input{
+.taskinput{
   height: 52px;
   padding: 0 25px;
   position: relative;
 }
-.task-input img{
+.taskinput img{
   top: 50%;
   position: absolute;
   transform: translate(17px, -50%);
 }
-.task-input input{
+.taskinput input{
   height: 100%;
   width: 100%;
   outline: none;
@@ -49,12 +49,12 @@ body{
   padding: 0 20px 0 53px;
   border: 1px solid #999;
 }
-.task-input input:focus,
+.taskinput input:focus,
 .task-input input.active{
   padding-left: 52px;
   border: 2px solid #3C87FF;
 }
-.task-input input::placeholder{
+.taskinput input::placeholder{
   color: #bfbfbf;
 }
 .controls, li{
@@ -99,27 +99,27 @@ body{
 .clear-btn:active{
   transform: scale(0.93);
 }
-.task-box{
+.box{
   margin-top: 20px;
   margin-right: 5px;
   padding: 0 20px 10px 25px;
 }
-.task-box.overflow{
+.box.overflow{
   overflow-y: auto;
   max-height: 300px;
 }
-.task-box::-webkit-scrollbar{
+.box::-webkit-scrollbar{
   width: 5px;
 }
-.task-box::-webkit-scrollbar-track{
+.box::-webkit-scrollbar-track{
   background: #f1f1f1;
   border-radius: 25px;
 }
-.task-box::-webkit-scrollbar-thumb{
+.box::-webkit-scrollbar-thumb{
   background: #e6e6e6;
   border-radius: 25px;
 }
-.task-box .task{
+.box .task{
   list-style: none;
   font-size: 17px;
   margin-bottom: 18px;
@@ -127,12 +127,12 @@ body{
   align-items: flex-start;
   border-bottom: 1px solid #ccc;
 }
-.task-box .task:last-child{
+.box .task:last-child{
   margin-bottom: 0;
   border-bottom: 0;
   padding-bottom: 0;
 }
-.task-box .task label{
+.box .task label{
   display: flex;
   align-items: flex-start;
 }
@@ -148,7 +148,7 @@ body{
 .task label p.checked{
   text-decoration: line-through;
 }
-.task-box .settings{
+.box .settings{
   position: relative;
 }
 .settings :where(i, li){
@@ -167,11 +167,11 @@ body{
   box-shadow: 0 0 6px rgba(11, 165, 236, 0.15);
   transition: transform 0.2s ease;
 }
-.task-box .task:last-child .task-menu{
+.box .task:last-child .task-menu{
   bottom: 0;
   transform-origin: bottom right;
 }
-.task-box .task:first-child .task-menu{
+.box .task:first-child .task-menu{
   bottom: -65px;
   transform-origin: top right;
 }
@@ -206,13 +206,13 @@ body{
   .filters span{
     margin: 0 5px;
   }
-  .task-input{
+  .taskinput{
     padding: 0 20px;
   }
   .controls{
     padding: 18px 20px;
   }
-  .task-box{
+  .box{
     margin-top: 20px;
     margin-right: 5px;
     padding: 0 15px 10px 20px;
